@@ -1,0 +1,56 @@
+future plans:
+1.Adding feature to maintain track and record whether medicine is consumed or not
+2.Adding automatic dispenser
+3.Caretaker will be notified about medicine consumption
+4.more………
+
+literature review:
+
+This IoT based smart medicine box is is designed to solve the problem of elderly patients forgetting to take or taking the wrong
+medication. The proposed prototype consisted of the actual physical pill box and an android application to be used by the user to
+receive notifications from the pill box to manage, set medication time and quantity and monitor and track the medicine consumption.
+The box has a mechanism of a pill box which has a different compartments for different medicine. 
+The ESP8266 node module as a microcontroller to link between hardware and software, buzzer and speaker for which gives voice commands which guides patients with a simple human understandable language(any language) and led of different colors which guides which medicine should be pick from which compartment.
+	The ESP8266 node module enable the internet connectivity to medicine box which makes the medicine box technological advance and enables to track,store and monitor the medicine consumption data. A well organized medicine box is obtained for any age group and all types of medicine
+being administered to the patient. There are different compartments required according to the nature of the tablet. Also, there are
+compartments with respect to how many times the tablet is supposed to be taken.. Medicine can be changed of replaced and also an intime treatment can be done if the condition goes worse. 
+	The Second Design, Smart medicine box is an IoT based pill box and a web application, to assist patients in adhering to their
+prescription schedules. The main objective of Smart medicine box at could notify caregivers when patients forget to take their medications,
+and to integrate a web-application that would provide an easy way for caregivers to communicate about prescriptions, and by
+extension, other topics relating to the wellbeing of the patient. The components used are LEDs, Piezo buzzers for alarms. It uses
+photo resistors used to detect if pills are still in their compartment. The second design, Smart medicine box, combines a web application and
+an IoT-based pill box to help patients stick to their medication regimens. Smart medicine box's primary goal is to alert caregivers when
+patients fail to take their pills and to incorporate a web application that would make it simple for caregivers to talk to each other
+about prescriptions and, in turn, other matters pertaining to the patient's welfare. LEDs and Piezo buzzers are employed as
+components for the alarms. To determine whether tablets are still in their compartment, it uses photo resistors.
+
+METHODOLOGY:
+Connect 4 Reds LEDs, Buzzer ,1 Green LED to the digital pins of the Node MCU. In Arduino IDE, install the libraries
+ESP8266Wifi(connect Node MCU to WIFI Network) , FirebaseESP8266(Connects Node MCU to Firebase Realtime Database) and
+initialize the variables like, database URL, auth code, password ,SSID of WIFI network, firebase data variable. Use the getInt
+function to retrieve data of the database field using the given path. Based upon the value of the retrieve data, set the Led and Buzzer
+Status. The status of LEDs and Buzzer is controlled by the mobile application. Upload the code on Node MCU board. Develop a
+mobile application which allows multiple users to set alarms. The mobile application consists of functionalities of Registration,
+Login, Dashboard, Add Medicine Page, Medicine Details Page, Schedule Alarms Page, Customer Profile Page, etc. When an alarm is
+scheduled , LED attached to particular box is ON and buzzer starts ringing.
+
+conclusion:
+1.Technologically advanced medication management system that utilizes Internet of Things (IoT) connectivity enhances the way individuals manage and take their medications.
+2.Mentally unstable or blind can have benefits of it fully.
+3.The application of internet of things (IoT) in the development of Pill Reminder and Monitoring systems make it possible to take medicine on time without any major help of caretaker by elderly patient by using some sensors, microcontroller, and web application connected to cloud.
+
+Advantages:
+1.The pill box is portable and can be carried anywhere.
+2.It runs on a powerbank which is inbuilded in box.
+3.Rechargable an it has power bank inbuild.
+4.After storing data once it can run without any internet connection.
+
+hardware:
+ESP8266 nodemodule, DFPlayer mini MP3 player, 3w speaker, jumper wires male-male, LCD display, plastic container, Ds3132 RTC module.
+
+software:
+Arduino IDE for coding, firebase database, kodular for mobile app development.
+
+
+ 
+
